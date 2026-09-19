@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  scrollbar-width: none
+}
+
+.comment-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.item {
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  line-height: 1.4;
+  white-space: nowrap;
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.chat-item {
+  /* color: #ffffff; */
+  .msg {
+    color: attr(data-font-color type(<color>), #ffffff);
+    -webkit-text-stroke: 4px attr(data-stroke-color type(<color>), #000000);
+    text-stroke: 4px attr(data-stroke-color type(<color>), #000000);
+    paint-order: stroke;
+  }
+}
+.gift-item {
+  background-color: #ffdddd86;
+  color: #ff3d3d;
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.follow-item {
+  background-color: #8acaff86;
+  color: #19588b;
+}
+
+.like-item {
+  background-color: #c0841486;
+  color: #ffffff;
+}
+
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100vw - 100%));
+  }
+}
