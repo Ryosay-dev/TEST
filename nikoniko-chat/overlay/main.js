@@ -231,8 +231,8 @@ if (setting.advertisement_enable !== 'false') {
         setTimeout(() => {
             advertisementEl.classList.remove('show');
         }, 1000 * 15);
-    // }, 1000 * 60 * 10);
-    }, 1000 * 20);
+    }, 1000 * 60 * 10);
+    
 }
 
 // setInterval(() => {
