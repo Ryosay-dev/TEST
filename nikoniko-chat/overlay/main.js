@@ -224,7 +224,7 @@ if (setting.like_enable === 'true') {
 
 
 
-if (setting.advertisement_enable === 'true' || setting.advertisement_enable) {    
+if (setting.advertisement_enable !== 'false') {    
     const advertisementEl = document.querySelector('.advertisement');
     setInterval(() => {
         advertisementEl.classList.add('show');
